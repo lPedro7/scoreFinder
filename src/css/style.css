@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Cormorant-Garamont';
+    src: url('/assets/font/cormorantGaramond/CormorantGaramond-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant-Garamont';
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    overflow: hidden;
+
+    border: 1px solid black;
+
+}
+
+#piano {
+    justify-content: center;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    display: flex;
+
+    border: 1px solid black;
+
+}
+
+.tecla{
+    height: 100px;
+    width: 20px;
+}
+
