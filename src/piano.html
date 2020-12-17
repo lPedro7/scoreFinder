@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ScoreFinder">
     <meta name="author" content="Pedro Ribeiro">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Music, Piano">    
+    <meta name="keywords" content="HTML, CSS, JavaScript, Music, Piano">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Score Finder</title>
 </head>
+
 <body>
-    
-<h1>Score Finder</h1>
+    <header>
+        <h1>Score Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="/scoreFinder/src/partitures.html">Partitures</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div id="piano">
-    <button id="do" class="tecla"></button>
-    <button id="do-sust" class="tecla"></button>
-    <button id="re" class="tecla"></button>
-    <button id="re-sust" class="tecla"></button>
-    <button id="mi" class="tecla"></button>
-    <button id="fa" class="tecla"></button>
-    <button id="fa-sust" class="tecla"></button>
-    <button id="sol" class="tecla"></button>
-    <button id="sol-sust" class="tecla"></button>
-    <button id="la" class="tecla"></button>
-    <button id="la-sust" class="tecla"></button>
-    <button id="si" class="tecla"></button>
-    <button id="si0" class="tecla"></button>
-</div>
+    <div id="piano">
+        <button id="do" data-alteracio="normal" class="tecla"></button>
+        <button id="do-sust" data-alteracio="sostingut" class="tecla negra"></button>
+        <button id="re" data-alteracio="normal" class="tecla"></button>
+        <button id="re-sust" data-alteracio="sostingut" class="tecla negra"></button>
+        <button id="mi" data-alteracio="normal" class="tecla"></button>
+        <button id="fa" data-alteracio="normal" class="tecla"></button>
+        <button id="fa-sust" data-alteracio="sostingut" class="tecla negra"></button>
+        <button id="sol" data-alteracio="normal" class="tecla"></button>
+        <button id="sol-sust" data-alteracio="sostingut" class="tecla negra"></button>
+        <button id="la" data-alteracio="normal" class="tecla"></button>
+        <button id="la-sust" data-alteracio="sostingut" class="tecla negra"></button>
+        <button id="si" data-alteracio="normal" class="tecla"></button>
+        <button id="do_agut" data-alteracio="normal" class="tecla"></button>
+    </div>
 
-<div id="cerca">
-    
-</div>
+    <div id="cerca">
 
+        <h3>Cerca</h3>
+        <div id="cercaNotes">
 
+        </div>
+
+        <button id="borrar">Esborra</button>
+
+        <h3>Resultats</h3>
+
+        <div id="resultat">
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
 
 </body>
+
 </html>
