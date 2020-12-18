@@ -9,15 +9,32 @@
 
 <body>
 
-    <form action="http://www.esliceu.com" method="POST">
+    <form action="http://www.esliceu.com" method="POST" id="form">
+
+        <input type="hidden" id="partituraId" value="">
 
         <label for="titol">Titol</label>
         <input type="text" name="titol">
+        <div id="titleError"></div>
 
-        <label for="idioma"></label>
+        <label for="idiomaOriginal">Idioma Original</label>
+        <select name="idiomaOriginal">
+            
+        </select>
+        <label for="lletraOriginal">Lletra Original</label>
+        <textarea name="lletraOriginal" cols="30" rows="10"></textarea>
+        <div id="lletraOriginalError"></div>
+
+        <label for="traduccioCatala">Traduccio al catala</label>
+        <textarea name="traduccioCatala" cols="30" rows="10"></textarea>
+        <div id="traduccioCatalaError"></div>
+
     </form>
 
-    <script src="js/partitura.js"></script>
+    <button id="enviar"> Enviar</button>
+
+
+    <script type="module" src="/scoreFinder/src/js/Vista/newPartitura.js"></script>
 </body>
 
 </html>
